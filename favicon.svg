@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="EZ Water Saving">
+  <defs>
+    <linearGradient id="drop" x1="12" y1="8" x2="50" y2="57" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5dd3e7"/>
+      <stop offset="1" stop-color="#087da5"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#drop)" d="M32 3S10 27 10 41c0 12.2 9.8 20 22 20s22-7.8 22-20C54 27 32 3 32 3Z"/>
+  <text x="32" y="47" fill="#fff" font-family="Arial,sans-serif" font-size="17" font-weight="700" text-anchor="middle">EZ</text>
+</svg>
