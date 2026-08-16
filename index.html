@@ -146,13 +146,31 @@
             <li>The environmental benefit continues with every gallon conserved</li>
           </ul>
         </div>
-        <aside class="estimate-card" aria-label="Potential savings example">
-          <span class="estimate-kicker">Potential example</span>
-          <div class="estimate-value"><sup>$</sup>200</div>
-          <strong>per year*</strong>
-          <p>Estimated potential savings for a family of four.</p>
+        <aside class="estimate-card savings-journey" aria-labelledby="savings-journey-title">
+          <div class="journey-heading">
+            <span class="estimate-kicker">Interactive example</span>
+            <span class="family-chip">Family of four</span>
+          </div>
+          <h3 id="savings-journey-title">Watch small savings add up.</h3>
+          <div class="journey-visual">
+            <div class="savings-dial" data-savings-dial style="--journey-progress: 100%" aria-hidden="true">
+              <div class="dial-center">
+                <span class="dial-value" data-savings-value>$200</span>
+                <small>potential*</small>
+              </div>
+            </div>
+            <div class="journey-copy" aria-live="polite">
+              <strong data-journey-period>By the end of one year</strong>
+              <span data-journey-message>Everyday water savings can become meaningful household savings.</span>
+            </div>
+          </div>
+          <div class="journey-control">
+            <label for="savings-timeline">Move through the year <output for="savings-timeline" data-days-output>365 days</output></label>
+            <input id="savings-timeline" data-savings-slider type="range" min="1" max="365" value="365" aria-describedby="savings-note">
+            <div class="timeline-labels" aria-hidden="true"><span>Day 1</span><span>6 months</span><span>1 year</span></div>
+          </div>
           <div class="estimate-divider"></div>
-          <small>*Actual water and cost savings vary by household usage, toilet model, product installation, and local water and sewer rates. Savings are not guaranteed.</small>
+          <small id="savings-note">*Illustration based on potential savings of up to about $200 per year for a family of four. Actual savings vary by household usage, toilet model, product installation, and local water and sewer rates. Savings are not guaranteed.</small>
         </aside>
       </div>
     </section>
